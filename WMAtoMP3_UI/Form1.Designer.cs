@@ -34,6 +34,8 @@
             this.LBLmp3 = new System.Windows.Forms.Label();
             this.LBLdata = new System.Windows.Forms.Label();
             this.BTN = new System.Windows.Forms.Button();
+            this.BTNselectwma = new System.Windows.Forms.Button();
+            this.BTNselectmp3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBLwma
@@ -87,11 +89,33 @@
             this.BTN.UseVisualStyleBackColor = true;
             this.BTN.Click += new System.EventHandler(this.BTN_Click);
             // 
+            // BTNselectwma
+            // 
+            this.BTNselectwma.Location = new System.Drawing.Point(754, 57);
+            this.BTNselectwma.Name = "BTNselectwma";
+            this.BTNselectwma.Size = new System.Drawing.Size(75, 23);
+            this.BTNselectwma.TabIndex = 6;
+            this.BTNselectwma.Text = "Select";
+            this.BTNselectwma.UseVisualStyleBackColor = true;
+            this.BTNselectwma.Click += new System.EventHandler(this.BTNselectwma_Click);
+            // 
+            // BTNselectmp3
+            // 
+            this.BTNselectmp3.Location = new System.Drawing.Point(754, 145);
+            this.BTNselectmp3.Name = "BTNselectmp3";
+            this.BTNselectmp3.Size = new System.Drawing.Size(75, 23);
+            this.BTNselectmp3.TabIndex = 7;
+            this.BTNselectmp3.Text = "Select";
+            this.BTNselectmp3.UseVisualStyleBackColor = true;
+            this.BTNselectmp3.Click += new System.EventHandler(this.BTNselectmp3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 333);
+            this.ClientSize = new System.Drawing.Size(912, 333);
+            this.Controls.Add(this.BTNselectmp3);
+            this.Controls.Add(this.BTNselectwma);
             this.Controls.Add(this.BTN);
             this.Controls.Add(this.LBLdata);
             this.Controls.Add(this.textBox2);
@@ -113,6 +137,8 @@
         private System.Windows.Forms.Label LBLmp3;
         private System.Windows.Forms.Label LBLdata;
         private System.Windows.Forms.Button BTN;
+        private System.Windows.Forms.Button BTNselectwma;
+        private System.Windows.Forms.Button BTNselectmp3;
     }
 }
 

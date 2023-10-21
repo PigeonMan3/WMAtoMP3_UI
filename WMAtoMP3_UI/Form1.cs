@@ -25,5 +25,38 @@ namespace WMAtoMP3_UI
             LBLdata.Text = "Finished";
 
         }
+
+        private void BTNselectwma_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            {
+                
+                DialogResult result = folderBrowserDialog.ShowDialog();
+
+                
+                if (result == DialogResult.OK)
+                {
+                 
+                    textBox1.Text = folderBrowserDialog.SelectedPath;
+                }
+            }
+
+        }
+
+        private void BTNselectmp3_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            {
+                
+                DialogResult result = folderBrowserDialog.ShowDialog();
+
+                
+                if (result == DialogResult.OK)
+                {
+                    
+                    textBox2.Text = folderBrowserDialog.SelectedPath;
+                }
+            }
+        }
     }
 }
